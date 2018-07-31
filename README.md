@@ -1,2 +1,0 @@
-# BVBCoreType
-Created with CodeSandbox
