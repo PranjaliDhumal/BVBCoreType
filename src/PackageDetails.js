@@ -12,7 +12,6 @@ export default class PackageDetails extends React.Component {
       selectedTypeId: props.selectedTypeId,
       itemTypes: props.itemTypes,
       isLoading: false,
-      isPopUpOpen: false,
       selectedTypeName: "",
       selectedTypeNamePackage: [],
       results: [],
@@ -75,11 +74,7 @@ export default class PackageDetails extends React.Component {
       return item.value === this.state.selectedTypeId ? item.text : null;
     });
     //return name;
-    this.setState(ps => {
-      return {
-        ...ps,
-        selectedTypeName: name
-      };
+    
     });
   };*/
   handleBVBRequest = (e, { isBVBrequired }, packageId) => {
